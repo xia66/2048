@@ -1,0 +1,98 @@
+/* 
+* @Author: Marte
+* @Date:   2017-10-24 19:46:29
+* @Last Modified by:   Marte
+* @Last Modified time: 2017-11-04 21:00:51
+*/
+#gridPanel{
+    width:480px; height:480px;
+    margin:0 auto;
+    background-color: #bbada0;
+    border-radius: 10px;
+    padding:20px 0 0 20px;
+    position:relative;
+}
+.grid,.cell{
+    width:100px;
+    height:100px;
+    border-radius: 6px;
+}
+.grid{
+    background-color: #ccc0bc;
+    float:left;
+    margin:0 20px 20px 0;
+}
+.cell{
+    position:absolute;
+    text-align:center;
+    line-height: 100px;
+    font-size:60px;
+    color:#776e65;
+}
+#c00,#c01,#c02,#c03{top:20px;zIndex:1;}
+#c10,#c11,#c12,#c13{top:140px;zIndex:1;}
+#c20,#c21,#c22,#c23{top:260px;zIndex:1;}
+#c30,#c31,#c32,#c33{top:380px;zIndex:1;}
+
+#c00,#c10,#c20,#c30{left:20px;}
+#c01,#c11,#c21,#c31{left:140px;}
+#c02,#c12,#c22,#c32{left:260px;}
+#c03,#c13,#c23,#c33{left:380px;}
+.n2{background-color:#eee3da;}
+.n4{background-color:#ede0c8;}
+.n8{background-color:#f2b179;}
+.n16{background-color:#f59563;}
+.n32{background-color:#f67c5f;}
+.n64{background-color:#f65e3b;}
+.n128{background-color:#edcf72;}
+.n256{background-color:#edcc61;}
+.n512{background-color:#9c0;}
+.n1024{background-color:#33b5e5;font-size:50px;}
+.n2048{background-color:#09c;font-size:50px;}
+.n4096{background-color:#a6c;font-size:50px;}
+.n8192{background-color:#93c;font-size:50px;}
+.n16384{background-color:black;color:red;font-size:40px;}
+.n32768{background-color:black;color:green;font-size:40px;}
+.n65536{background-color:black;color:yellow;font-size:40px;}
+.n131072{background-color:black;color:white;font-size:30px;}
+/*显示分数的p元素*/
+p{
+    width:480px;
+    margin:0 auto;
+    font-family:Arial;
+    font-weight:bold;
+    font-size:40px;
+    padding-top:15px;
+}
+/*游戏结束*/
+#gameOver{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;left:0px;
+    display:none;
+}
+#gameOver div{
+    width:100%;
+    height:100%;
+    background-color:#555;
+    opacity:0.5;
+}
+#gameOver p{
+    position:absolute;
+    border-radius:10px;
+    top:200px;
+    left:40%;
+    width:300px;
+    height:200px;
+    border:1px solid #edcf72;
+    line-height:1.6em;
+    text-align:center;
+    background-color:#fff;}
+.button{
+    padding:10px;
+    background-color:#9f8d77;
+    border-radius:6px;
+    color:#fff;
+    cursor:pointer;  
+}
